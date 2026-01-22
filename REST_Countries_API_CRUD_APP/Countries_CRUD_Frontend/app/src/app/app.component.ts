@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { ThemeService } from './theme.service';
+import { SearchComponent } from './search/search.component';
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, SearchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
