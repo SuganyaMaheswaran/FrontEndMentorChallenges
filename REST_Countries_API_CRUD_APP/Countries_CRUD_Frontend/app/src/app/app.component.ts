@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-
+import { ThemeService } from './theme.service';
 @Component({
   selector: 'app-root',
   imports: [HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'app';
+export class AppComponent implements OnInit{
+  title = 'Country Explorer';
+  constructor(private themeService: ThemeService){}
+  ngOnInit(){
+    this.themeService.currentTheme$.subscribe(isDark=>{
+      isDark? document.documentElement.setAttribute('data-theme', 'dark-theme'):document.documentElement.removeAttribute('data-theme');
+    })
+  }
+
 }
