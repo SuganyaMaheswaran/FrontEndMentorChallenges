@@ -12,7 +12,7 @@
 [data-theme="dark-theme"]{
     --color-bg: hsl(207,26%, 17%);
     --color-text:hsl(0,100%,100%);
-    --color-input: hsl(0,0%,50%);
+    --color-input:hsl(0, 100%, 100%);
     --color-element: hsl(209,23%, 22%);
     --color-accent: hsl(209,23%, 22%);
 
