@@ -1,13 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     font-family: 'Nunito Sans';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right:40px;
+    border:  5px solid pink;
+}
 .list-view-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    padding: 0;
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+
+    padding: .25rem
+
 }
 
 .list-item {
