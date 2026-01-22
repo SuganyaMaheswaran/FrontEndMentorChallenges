@@ -1,11 +1,12 @@
 /*Light mode (default) */
 
 :root{
-    --color-bg: hsl(0,0%, 99%);
+    --color-bg:  hsl(0, 0%, 99%);
     --color-text: hsl(200,15%, 8%);
     --color-input: hsl(0,0%,50%);
     --color-element: hsl(0,100%, 100%);
     --color-accent: hsl(209,23%,22%);
+    --color-element-hover: hsl(0, 0%, 90%);   
 }
 
 /* Dark mode */
@@ -15,5 +16,6 @@
     --color-input:hsl(0, 100%, 100%);
     --color-element: hsl(209,23%, 22%);
     --color-accent: hsl(209,23%, 22%);
+    --color-element-hover: hsl(207, 26%, 18%);
 
 }
