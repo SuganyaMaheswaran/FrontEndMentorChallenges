@@ -14,13 +14,8 @@ export class ThemeService {
     console.log("toggleTheme working")
     const isDark = !this.darkTheme.value; 
     this.darkTheme.next(isDark);
-    if (isDark) {
-    document.documentElement.setAttribute('data-theme', 'dark-theme');
-  } else {
-    document.documentElement.removeAttribute('data-theme');
-  }
-
-  }
+   }
+   
   get isDarkTheme(){
     return this.darkTheme.value;
   }
