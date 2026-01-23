@@ -1,5 +1,5 @@
 <div class="search-bar">
        <fa-icon class="search-bar__icon" [icon]="faSearch"></fa-icon>
        <label class="visually-hidden" for="search-input">Search for a country</label>
-       <input type="text" class="search-bar__input" placeholder="Search for a country...">
+       <input type="text" class="search-bar__input"  [(ngModel)]="searchTerm" placeholder="Search for a country..." (input)="onSearch()">
 </div>
