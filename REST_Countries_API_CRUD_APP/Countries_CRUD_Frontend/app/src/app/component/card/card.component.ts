@@ -10,4 +10,8 @@ import { Country } from '../../models/country.model';
 export class CardComponent {
 @Input() country?:Country; 
 
+onCardClick(country:any){
+  console.log("clicked country: ", country);
+}
+
 }
