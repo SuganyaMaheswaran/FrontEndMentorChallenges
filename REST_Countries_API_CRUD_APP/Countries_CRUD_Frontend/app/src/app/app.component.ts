@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './component/header/header.component';
 import { ThemeService } from './theme.service';
-import { SearchComponent } from './search/search.component';
-import { FilterComponent } from "./filter/filter.component";
+import { SearchComponent } from './component/search/search.component';
+import { FilterComponent } from "./component/filter/filter.component";
+import { CardContainerComponent } from './component/card-container/card-container.component';
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, SearchComponent, FilterComponent],
+  imports: [HeaderComponent, SearchComponent, FilterComponent, CardContainerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
