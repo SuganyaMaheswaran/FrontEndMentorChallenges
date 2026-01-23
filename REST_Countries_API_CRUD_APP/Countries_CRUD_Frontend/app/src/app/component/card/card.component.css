@@ -21,7 +21,7 @@
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap:0.5rem;
+ 
 }
 
 .card__info-header{
@@ -34,4 +34,20 @@
     font-size: 0.9rem;
     color: var(--color-text);
     font-weight: 200;
+}
+
+@media screen and (min-width:768px){
+    .card__container{
+        width: 250px;
+        margin: 0 auto; 
+        height: 100%;
+    }
+    .card__info-header{
+        font-weight: bold;
+        line-height: 1.2rem;
+        max-height: 2.4rem;   /* enough for 2 lines */
+        overflow: hidden;     /* hide extra text */
+        text-overflow: ellipsis;
+    }
+
 }
