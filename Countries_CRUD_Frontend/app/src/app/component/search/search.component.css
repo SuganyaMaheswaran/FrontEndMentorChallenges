@@ -1,0 +1,32 @@
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    background: var(--color-element);
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    margin: 1rem 1rem;
+    border: var(--color-element); 
+    
+}
+.search-bar__icon{
+    font-size: 1rem;
+    color: var(--color-input);
+}
+.visually-hidden{
+    display: none;
+}
+.search-bar__input{
+    flex:1;
+    border:  none;
+    background-color: transparent;
+    color:var(--color-input);
+    font-size: 1rem;
+    font-weight: 500;
+    outline: none;
+}
+
+.search-bar__input::placeholder{
+    color:var(--color-input);
+}

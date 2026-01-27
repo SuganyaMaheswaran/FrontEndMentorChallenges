@@ -1,0 +1,9 @@
+<div class="card__container" (click)="onCardClick(country)">
+    <img src="{{this.country?.flags?.svg}}" alt="" class="card__image">
+    <div class="card__info-container">
+        <h1 class="card__info-header">{{this.country?.name}}</h1>
+        <h2 class="card__info-item">Population: {{this.country?.population}}</h2>
+        <h2 class="card__info-item">Region: {{this.country?.region}}</h2>
+        <h2 class="card__info-item">Capital: {{this.country?.capital}} </h2>
+    </div>
+</div>
