@@ -1,5 +1,0 @@
-:host {
-  display: block;
-  background-color: var(--color-bg);
-  min-height: 100vh; /* optional to fill screen */
-}
