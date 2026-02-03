@@ -1,6 +1,11 @@
-<div class="card__component-container"> 
-
-    <app-card *ngFor = "let country of countries$ | async" [country]="country"/>
-  
+<div class="card__component">
     
+     <app-search></app-search>
+    <app-filter></app-filter>
+    <div class="card__list-container"> 
+        
+        <app-card *ngFor = "let country of countries$ | async" [country]="country"/>
+        
+        
+    </div>
 </div>
